@@ -1,0 +1,17 @@
+@import "./base/bases";
+@import "./base/typography";
+@import "./utils/variables";
+@import "./utils/mixins";
+
+// @import "./components/img";
+// @import "./components/div__reseaux__img";
+
+@import "./layout/header";
+@import "./layout/footer";
+
+@import "./pages/home";
+// @import "./pages/responsive";
+@font-face{
+    font-family: "Ubuntu Mono";
+    src: url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"');
+}

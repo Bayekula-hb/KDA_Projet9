@@ -1,0 +1,16 @@
+@mixin block--flex--row{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+@mixin block--flex--col{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+@mixin display--inline {
+    display: inline-block;
+}
+@mixin border-radius($taille){
+    border-radius: $taille;
+}

@@ -1,0 +1,24 @@
+.Footer{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: $black-color;
+    padding: 2%;
+    color: $color-white;
+    & h3{
+      font-family: "Ubuntu Mono", sans-serif;
+      font-size: 1.8rem;
+    }
+    & .list-menu{
+      margin: 3% 0%;
+      @include block--flex--row;
+      align-items: center;
+      & .link{
+          color: $color-white;
+          margin: 0% 0%;
+          font-size: 1.9rem;
+      }
+    }
+  }

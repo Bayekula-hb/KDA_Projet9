@@ -1,0 +1,10 @@
+.Header{
+   background-color: $color-black20;
+   @include block--flex--row;
+   
+   & .link{
+    text-decoration: none;
+    font-size: 4rem;
+    color:$color-text;
+   }
+}
