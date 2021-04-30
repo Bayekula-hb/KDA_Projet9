@@ -38,7 +38,6 @@ const Section = (props) => {
             classNameImg="img img--film"
             classNameH3="H3 h3--tilte"
             Image={props.ImageCard}
-            classNameImg="img img--cardI"
             Alt="Image Image"
             contenuH3="LLL skssk kks s"
           />
@@ -47,7 +46,6 @@ const Section = (props) => {
             classNameImg="img img--film"
             classNameH3="H3 h3--tilte"
             Image={props.ImageCard2}
-            classNameImg="img img--cardI"
             Alt="Image Image"
             contenuH3="LLL skssk kks s"
           />
@@ -56,7 +54,6 @@ const Section = (props) => {
             classNameImg="img img--film"
             classNameH3="H3 h3--tilte"
             Image={props.ImageCard2}
-            classNameImg="img img--cardI"
             Alt="Image Image"
             contenuH3="LLL skssk kks s"
           />
