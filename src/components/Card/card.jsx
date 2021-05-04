@@ -1,8 +1,8 @@
 const Card = (props)=>{
     return(
-        <div className={props.className}>
-            <img className="img--card" src={props.Image} alt={props.Alt} srcset=""/>
-            <h3 className={props.classNameH3}>{props.contenuH3}</h3>
+        <div  className="card">
+            <img className="img--cardI" src={props.urlImage} alt={props.urlImageAlt} srcset=""/>
+            <h3 className="title--film">{props.titlefilm}</h3>
         </div>
     )
 }

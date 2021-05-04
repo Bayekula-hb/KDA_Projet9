@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Ul, { Li } from "./Ul";
-import Image from "../Image/illustraction.jpg";
 
 const Header = ()=>{
     return(
@@ -21,9 +20,6 @@ const Header = ()=>{
                 </div>
             </div>
             </header>
-            <section className="section--home">
-                <img src={Image} alt="img-film" className="section--home"/>
-            </section>
         </>
     );
 }

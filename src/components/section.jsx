@@ -37,9 +37,17 @@ const Section = (props) => {
             className="card card--film"
             classNameImg="img img--film"
             classNameH3="H3 h3--tilte"
-            Image={props.ImageCard}
-            Alt="Image Image"
-            contenuH3="LLL skssk kks s"
+            urlImage={props.ImageCard}
+            urlImageAlt="Image Image"
+            titlefilm={props.titleFilm}
+          />
+          <Card
+            className="card card--film"
+            classNameImg="img img--film"
+            classNameH3="H3 h3--tilte"
+            urlImage={props.ImageCard2}
+            AurlImagelt="Image Image"
+            titlefilm="LLL skssk kks s"
           />
           <Card
             className="card card--film"
@@ -49,30 +57,6 @@ const Section = (props) => {
             Alt="Image Image"
             contenuH3="LLL skssk kks s"
           />
-          <Card
-            className="card card--film"
-            classNameImg="img img--film"
-            classNameH3="H3 h3--tilte"
-            Image={props.ImageCard2}
-            Alt="Image Image"
-            contenuH3="LLL skssk kks s"
-          />
-          {/* <Card className="card card--film" 
-                       classNameImg="img img--film"
-                       classNameH3 = "H3 h3--tilte" 
-                       Image={props.ImageCard2}
-                       classNameImg="img img--cardI"
-                       Alt="Image Image"
-                       contenuH3="LLL skssk kks s"
-                       /> */}
-          {/* <Card className="card card--film" 
-                       classNameImg="img img--film"
-                       classNameH3 = "H3 h3--tilte" 
-                       Image={props.ImageCard2}
-                       classNameImg="img img--cardI"
-                       Alt="Image Image"
-                       contenuH3="LLL skssk kks s"
-                       /> */}
         </div>
       </div>
     </section>
