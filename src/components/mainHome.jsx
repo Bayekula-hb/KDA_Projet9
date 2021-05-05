@@ -1,16 +1,18 @@
 import React from "react";
-import Image from "../Image/illustraction.jpg";
+// import Image from "../Image/illustraction.jpg";
 import SectionAction from "./Home/sectionAction";
 import SectionDrama from "./Home/sectionDrama";
 import SectionComedy from "./Home/sectionComedy";
 import Footer from "./Footer";
+import CarouselN from "./newCarousel";
 
 const MainHome = ({ filmList, filmLinkImage }) => {
   return (
     <>
-      <section className="section--home">
+      {/* <section className="section--home">
         <img src={Image} alt="img-film" className="section--home" />
-      </section>
+      </section> */}
+      <CarouselN />
       <main>
         <SectionAction />
         <SectionDrama />

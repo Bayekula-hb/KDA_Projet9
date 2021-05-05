@@ -20,7 +20,15 @@ const SectionAction = () => {
         setListFilm(films);
       });
   },[]);
-  const filmAction = listFilm.filter((film, index) => {
+  let TabFilmAction = [];
+  listFilm.map((film)=>{
+    for (const Id of film.genre_ids) {
+      if((Id === 18 || Id === 12) && Id != 10749 ){
+        TabFilmAction.push(film)
+      }
+    }
+  })
+  const filmAction = TabFilmAction.filter((film, index) => {
     return index < 4;
   });
   return (

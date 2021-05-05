@@ -11,7 +11,7 @@ const SectionDrama = () => {
   useEffect(() => {
     axios
       .get(
-        "https://api.themoviedb.org/3/list/9?api_key=b5be08aabb5691e1522a3bd74604d1ee&page=1"
+        "https://api.themoviedb.org/3/list/30?api_key=b5be08aabb5691e1522a3bd74604d1ee&page=1"
       )
       .then((result) => {
         return result.data.items;
@@ -20,11 +20,17 @@ const SectionDrama = () => {
         setListFilm(films);
       });
   },[]);
-  console.log("Drama : ",listFilm);
-  const filmAction = listFilm.filter((film, index) => {
-    return index < 4;
+  let TabFilmDrama = [];
+  listFilm.map((film)=>{
+    for (const Id of film.genre_ids) {
+      if(Id === 18 || Id === 10749 && Id != 12 && Id != 28 ){
+        TabFilmDrama.push(film)
+      }
+    }
+  })
+  const filmDrama = TabFilmDrama.filter((film, index) => {
+    return index >= 0 && index < 4;
   });
-  console.log("section action : ",filmAction);
   return (
     <section className="section section--drama">
       <h2 className="h2 h2--titleSection">Drama & Romance </h2>
@@ -55,7 +61,7 @@ const SectionDrama = () => {
           }
         />
         <div className="container--card">
-          {filmAction.map((film) => {
+          {filmDrama.map((film) => {
               return (
                 <Card
                   urlImage={linkImage + film.poster_path}

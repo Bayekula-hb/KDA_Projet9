@@ -36,10 +36,24 @@ svg {
   width: 7%;
   height: auto;
 }
-.section--home {
+.carousel--div {
   width: 100%;
-  height: 93vh;
-  background-color: #000;
+  height: 90vh;
+  & .carousel-control-prev-icon {
+    color: blue !important;
+  }
+  .carousel-inner {
+    display: flex;
+    flex-wrap: wrap;
+    object-fit: contain;
+    & .carousel-item {
+      width: 100%;
+      height: 90vh;
+      & .image-carousel {
+        width: 100%;
+      }
+    }
+  }
 }
 .img--card {
   width: 100%;
@@ -60,17 +74,15 @@ svg {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-  
-    border: 2px solid rgb(36, 226, 11);
-    & .list-menu{
-        justify-content: flex-start;
-        margin: 3% 0%;
-        & .link{
-            margin: 0% 0%;
-            padding-bottom: 1.6%;
-            border-bottom: 2px solid #ee5253;
-            font-size: 1.9rem;
-        }
+    & .list-menu {
+      justify-content: flex-start;
+      margin: 3% 0%;
+      & .link {
+        margin: 0% 0%;
+        padding-bottom: 1.6%;
+        border-bottom: 2px solid #ee5253;
+        font-size: 1.9rem;
+      }
     }
     .container--card {
       width: 97%;
@@ -81,33 +93,50 @@ svg {
 
       & .card {
         width: auto;
-        border: 2px solid rgb(25, 21, 216);
         margin: 0% 2%;
+        border-radius: 15px;
+        background-color: #576574;
+        transform: scale(1);
+        transition: transform 400ms;
+        &:hover {
+          color: #f7f1e3;
+          border: 2px solid #fc427b;
+          transform: scale(1.08);
+        }
         & .img--cardI {
           width: 100%;
           height: 95%;
+          border-radius: 15.2px;
         }
-        & h3{
-            font-size: 2rem;
-            color: $color-text;
-            text-justify: auto;
+        & h3 {
+          font-size: 2rem;
+          color: $color-text;
+          text-justify: auto;
+          // border: 3px solid #c8d6e5;
+          border-radius: 15px;
+          align-self: center;
+          &:hover {
+            color: #f7f1e3;
+            padding: 1%;
+            border: 3px solid #fc427b;
+          }
         }
       }
     }
   }
 }
-.section--action{
+.section--action {
   background-color: $color-home;
 }
-.section--drama{
-    display: flex;
-    flex-direction: row-reverse;
-    background-color: $color-black20;
-    & .h2--titleSection{
-      color: $color-home;
-    }
+.section--drama {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: $color-black20;
+  & .h2--titleSection {
+    color: $color-home;
+  }
 }
-.spokes{
+.spokes {
   width: 12rem;
   height: 12rem;
   font-size: 4rem;
