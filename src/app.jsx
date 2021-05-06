@@ -12,7 +12,6 @@ export const filmPopularContext = React.createContext();
 export const filmActionContext = React.createContext();
 
 function App() {
-
   const [listFilmPopular, setListFilm] = useState([]);
   useEffect(() => {
     axios
@@ -26,7 +25,7 @@ function App() {
         setListFilm(films);
       });
   }, []);
-  
+
   const [listFilmAction, setlistFilmAction] = useState([]);
   useEffect(() => {
     axios
@@ -51,13 +50,15 @@ function App() {
   const filmAction = TabFilmAction.filter((film, index) => {
     return index < 4;
   });
-  
+
   return (
     <>
-      <Header/>
+      <Header />
       <Switch>
-        <Route exact path="/" component={MainHome}></Route>
         <filmPopularContext.Provider value={listFilmPopular}>
+          <filmActionContext.Provider value={filmAction}>
+            <Route exact path="/" component={MainHome}></Route>{" "}
+          </filmActionContext.Provider>
           <Route path="/movies" component={Movies}></Route>
         </filmPopularContext.Provider>
       </Switch>

@@ -1,7 +1,10 @@
-.main-movies {
+.main-movies {background-color : #aaa69d;
   & h2 {
     text-align: center;
     font-size: 4rem;
+    color: #ffffff;
+    font-family: "Ubuntu",sans-serif;
+    font-weight: 700;
   }
   .container--card {
     display: flex;
