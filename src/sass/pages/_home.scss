@@ -1,20 +1,59 @@
 .link--h1 {
-  width: 10%;
+  width: 15%;
 }
 .list-menu {
-  width: 35%;
+  width: 25%;
   @include block--flex--row;
   justify-content: flex-end;
   align-items: center;
-}
-.list-menu li {
-  @include display--inline;
-  margin: 0% 3%;
+  & li {
+    @include display--inline;
+    margin: 0% 3%;
+  }
 }
 .div--search {
-  @include block--flex--row;
-
   align-items: center;
+  width: 20%;
+  align-self: flex-end;
+  & .form {
+    margin: 3% 3%;
+    font-size: 2rem;
+    align-self: center !important;
+    @include block--flex--row;
+
+    & input {
+      border: 2px solid $color-text;
+      border-radius: 15px;
+      background-color: transparent;
+      color: #f7f1e3;
+      &:focus,
+      &::placeholder{
+        outline: none;
+        text-align: center;
+        color: #f7f1e3;
+      }
+      &:focus{
+        border: 2px solid #f7f1e3;
+      }
+    }
+    &--btn {
+      align-items: center;
+      font-size: 2.5rem!important;
+      color: #fc427b!important;
+      border: 2px solid $color-text;
+      border-radius: 15px;
+      background-color: transparent;
+      // & i{
+      //   color: #fc427b;
+      // }
+      &:hover{
+        border: 2px solid #f7f1e3;
+        & i{
+            color: #fc427b;
+          }
+      }
+    }
+  }
   &-div {
     display: flex;
     align-items: center;
@@ -32,10 +71,7 @@
     border: 2px solid $color-white;
   }
 }
-svg {
-  width: 7%;
-  height: auto;
-}
+
 .carousel--div {
   width: 100%;
   height: 90vh;

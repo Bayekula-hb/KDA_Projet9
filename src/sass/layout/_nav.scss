@@ -1,0 +1,18 @@
+.nav{
+    background-color: blue;
+    &--div{
+
+        &--menu{
+            .list-menu{
+                display: flex;
+            }
+        }
+    }
+    &--end{
+        & .form--search{
+            img{
+                width: 20%;
+            }
+        }
+    }
+}

@@ -3,7 +3,7 @@ import axios from "axios";
 
 const CarouselN = () => {
   const [listFilm, setListFilm] = useState([]);
-  const linkImage = "https://www.themoviedb.org/t/p/w220_and_h330_face";
+  const linkImage = "https://image.tmdb.org/t/p/w1280/";
   useEffect(() => {
     axios
       .get(

@@ -1,7 +1,6 @@
 .Footer{
     display: flex;
     flex-direction: column;
-    align-content: center;
     align-items: center;
     text-align: center;
     background-color: $black-color;
@@ -12,13 +11,17 @@
       font-size: 1.8rem;
     }
     & .list-menu{
+      width: 50%;
       margin: 3% 0%;
       @include block--flex--row;
-      align-items: center;
       & .link{
           color: $color-white;
           margin: 0% 0%;
           font-size: 1.9rem;
+          &:hover, &:focus{
+            text-decoration: none;
+            color: $color-text;
+          }
       }
     }
   }
