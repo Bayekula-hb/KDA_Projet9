@@ -39,7 +39,7 @@ const CarouselN = () => {
         <div className="carousel-item active">
           <img
             src={linkImage + tabFilm[0]}
-            alt="image"
+            alt="film"
             className="image-carousel"
           />
         </div>

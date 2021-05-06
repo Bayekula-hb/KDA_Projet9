@@ -1,8 +1,9 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect,useContext } from "react";
 import axios from "axios";
 import Card from "../Card/card";
 import Ul, { Li } from "../Ul";
 import { Link } from "react-router-dom";
+import {filmActionContext} from "../../app";
 
 const SectionAction = () => {
 
@@ -31,6 +32,7 @@ const SectionAction = () => {
   const filmAction = TabFilmAction.filter((film, index) => {
     return index < 4;
   });
+  const context = useContext(filmActionContext);
   return (
     <section className="section section--action">
       <h2 className="h2 h2--titleSection">action & adventure </h2>

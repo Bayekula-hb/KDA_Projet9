@@ -4,11 +4,10 @@ import "./index.css";
 import App from "./app";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
-import ContextFilm, {filmContextPopular} from "./ContextFilm";
 
 ReactDOM.render(
   <BrowserRouter>
-      <App />
+    <App />
   </BrowserRouter>,
 
   document.getElementById("root")
