@@ -1,7 +1,5 @@
-import { useState, useEffect, useContext } from "react";
-import axios from "axios";
+import { useContext } from "react";
 import Card from "./Card/card";
-import Footer from "./Footer";
 import { filmPopularContext } from "../app";
 
 const Movies = () => {

@@ -35,7 +35,7 @@ const CarouselN = () => {
         <li data-target="#carousel_1" data-slide-to="1"></li>
         <li data-target="#carousel_1" data-slide-to="2"></li>
       </ul>
-      <div className="carousel-inner " data-interval="2000">
+      <div className="carousel-inner " data-interval="1500">
         <div className="carousel-item active">
           <img
             src={linkImage + tabFilm[0]}
